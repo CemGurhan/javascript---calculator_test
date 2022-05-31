@@ -16,7 +16,11 @@ describe('sum', () => {
     expect(actual).toBe(expected);
   });
 
-  test.skip('can add two large positive numbers', () => { 
+  test('can add two large positive numbers', () => { 
+
+    
+
+    expect(sum(1_000_000,400_000)).toBe(1_400_000)
     
   });
 
