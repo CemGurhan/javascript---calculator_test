@@ -70,6 +70,18 @@ describe('subtract', () => {
 
   });
 
+  test("can subtract a number from a string",() => {
+
+    expect(subtract("hello",5)).toBe("hello-5");
+
+  });
+
+  test("cannot subtract a string from a string",() => {
+
+    expect(subtract("hello","bye")).toBe("helloNaN");
+
+  });
+
 });
 
 describe('multiply', () => {
@@ -97,6 +109,18 @@ describe('multiply', () => {
     expect(multiply(0.5,0.25)).toBe(0.125);
 
   })
+
+  test('cannot multiply a string with a positive number',()=>{
+
+    expect(multiply("hello",4)).toBe(NaN);
+
+  });
+
+  test('cannot multiply a string with a string',()=>{
+
+    expect(multiply("hello","bye")).toBe(NaN);
+
+  });
 
 });
 
