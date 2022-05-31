@@ -24,11 +24,15 @@ describe('sum', () => {
     
   });
 
-  test.skip('can add two negative numbers', () => {
+  test('can add two negative numbers', () => {
+
+    expect(sum(-3,-4)).toBe(-7);
     
   });
 
-  test.skip('can add zero', () => {
+  test('can add zero', () => {
+
+    expect(sum(2,0)).toBe(2);
     
   });
 
